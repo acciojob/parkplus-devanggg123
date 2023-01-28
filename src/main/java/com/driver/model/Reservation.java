@@ -7,7 +7,7 @@ public class Reservation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int reservationId;
+    private int id;
 
     private int numberOfHours;
 
@@ -30,12 +30,12 @@ public class Reservation {
     public Reservation() {
     }
 
-    public int getReservationId() {
-        return reservationId;
+    public int getId() {
+        return id;
     }
 
-    public void setReservationId(int reservationId) {
-        this.reservationId = reservationId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getNumberOfHours() {

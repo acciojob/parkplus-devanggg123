@@ -7,7 +7,7 @@ public class Payment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int paymentId;
+    private int id;
 
     @Column(columnDefinition = "TINYINT(1)")
     private boolean paymentCompleted;
@@ -27,12 +27,12 @@ public class Payment {
     public Payment() {
     }
 
-    public int getPaymentId() {
-        return paymentId;
+    public int getId() {
+        return id;
     }
 
-    public void setPaymentId(int paymentId) {
-        this.paymentId = paymentId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public boolean isPaymentCompleted() {

@@ -9,7 +9,7 @@ public class ParkingLot {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int parkingLotId;
+    private int id;
 
     private String name;
 
@@ -27,12 +27,12 @@ public class ParkingLot {
     public ParkingLot() {
     }
 
-    public int getParkingLotId() {
-        return parkingLotId;
+    public int getId() {
+        return id;
     }
 
-    public void setParkingLotId(int parkingLotId) {
-        this.parkingLotId = parkingLotId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
